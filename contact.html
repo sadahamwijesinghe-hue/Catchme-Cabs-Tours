@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Booking | Catchme Cabs & Tours Sri Lanka</title>
+  <meta name="description" content="Contact Catchme Cabs & Tours for 24/7 Cab & Tour reservations in Sri Lanka. Call or WhatsApp +94 76 817 1844 / +94 77 037 9002. Facebook: Catchme Cabs & Tours.">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              blue: '#0F2B5C',
+              royal: '#1D4ED8',
+              sky: '#0284C7',
+              yellow: '#FFB703',
+              gold: '#F59E0B',
+              amber: '#D97706',
+              dark: '#0B1528',
+              surface: '#F8FAFC'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-white text-slate-800 antialiased selection:bg-brand-yellow selection:text-brand-dark">
+
+  <!-- ================= TOP BAR ================= -->
+  <div class="bg-brand-dark text-slate-200 text-xs sm:text-sm py-2 px-4 border-b border-white/10">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-3">
+        <span class="inline-flex items-center gap-1.5 bg-emerald-500/20 text-emerald-400 px-2.5 py-0.5 rounded-full text-xs font-semibold">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+          24/7 Available Island-Wide
+        </span>
+        <span class="hidden sm:inline text-slate-400">|</span>
+        <span class="hidden sm:inline text-slate-300">
+          <i class="fa-solid fa-plane-arrival text-brand-yellow mr-1"></i> BIA Airport Pickup & Drop Specialists
+        </span>
+      </div>
+
+      <div class="flex items-center gap-4 sm:gap-6">
+        <a href="tel:+94768171844" class="hover:text-brand-yellow transition-colors flex items-center gap-1.5 font-medium">
+          <i class="fa-solid fa-phone text-brand-yellow"></i>
+          <span>+94 76 817 1844</span>
+        </a>
+        <span class="text-slate-600">/</span>
+        <a href="tel:+94770379002" class="hover:text-brand-yellow transition-colors flex items-center gap-1.5 font-medium">
+          <i class="fa-solid fa-phone text-brand-yellow"></i>
+          <span>+94 77 037 9002</span>
+        </a>
+        <a href="https://www.facebook.com/search/top?q=Catchme%20Cabs%20%26%20Tours" target="_blank" rel="noopener noreferrer" class="text-slate-300 hover:text-brand-yellow transition-colors flex items-center gap-1 text-xs" title="Facebook - Catchme Cabs & Tours">
+          <i class="fa-brands fa-facebook text-blue-400 text-base"></i>
+          <span class="hidden lg:inline">Catchme Cabs & Tours</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= HEADER & NAVIGATION ================= -->
+  <header id="siteHeader" class="sticky top-0 z-50 transition-all duration-300 glass-nav border-b border-slate-100 py-3">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-brand-blue to-brand-royal flex items-center justify-center text-brand-yellow shadow-lg shadow-brand-blue/20 group-hover:scale-105 transition-transform">
+          <i class="fa-solid fa-taxi text-xl"></i>
+        </div>
+        <div>
+          <span class="text-xl sm:text-2xl font-black tracking-tight text-brand-blue block leading-none font-heading">
+            CATCHME <span class="text-brand-gold">CABS</span>
+          </span>
+          <span class="text-[10px] sm:text-xs font-bold tracking-widest text-slate-500 uppercase block mt-0.5">
+            & TOURS SRI LANKA
+          </span>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-8 font-semibold text-sm text-slate-700">
+        <a href="index.html" class="hover:text-brand-royal transition-colors">Home</a>
+        <a href="about.html" class="hover:text-brand-royal transition-colors">About Us</a>
+        <a href="services.html" class="hover:text-brand-royal transition-colors">Services</a>
+        <a href="fleet.html" class="hover:text-brand-royal transition-colors">Our Fleet</a>
+        <a href="tours.html" class="hover:text-brand-royal transition-colors">Sri Lanka Tours</a>
+        <a href="contact.html" class="text-brand-royal font-bold relative after:absolute after:bottom-[-6px] after:left-0 after:w-full after:h-[2px] after:bg-brand-royal">
+          Contact Us
+        </a>
+      </nav>
+
+      <div class="hidden sm:flex items-center gap-3">
+        <button class="trigger-call-modal px-4 py-2.5 rounded-xl border border-brand-blue/20 text-brand-blue hover:bg-brand-blue hover:text-white transition-all font-semibold text-xs sm:text-sm flex items-center gap-2">
+          <i class="fa-solid fa-phone-volume text-brand-gold"></i>
+          <span>Call Hotlines</span>
+        </button>
+        <a href="https://wa.me/94768171844?text=Hello%20Catchme%20Cabs,%20I%20would%20like%20to%20contact%20you" target="_blank" rel="noopener noreferrer" class="btn-shimmer bg-brand-yellow hover:bg-brand-gold text-brand-dark px-5 py-2.5 rounded-xl font-bold text-xs sm:text-sm shadow-md hover:shadow-lg transition-all flex items-center gap-2">
+          <i class="fa-brands fa-whatsapp text-lg text-emerald-800"></i>
+          <span>WhatsApp Chat</span>
+        </a>
+      </div>
+
+      <button id="mobileMenuToggle" class="lg:hidden p-2 rounded-lg text-slate-700 hover:bg-slate-100 text-xl" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- ================= MOBILE NAVIGATION DRAWER ================= -->
+  <div id="mobileMenuBackdrop" class="fixed inset-0 bg-black/60 z-50 hidden opacity-0 transition-opacity duration-300"></div>
+  <div id="mobileMenu" class="fixed top-0 right-0 w-80 max-w-[85%] h-full bg-white z-50 shadow-2xl transform translate-x-full transition-transform duration-300 flex flex-col justify-between">
+    <div class="p-6">
+      <div class="flex items-center justify-between pb-6 border-b border-slate-100">
+        <div class="flex items-center gap-2.5">
+          <div class="w-9 h-9 rounded-lg bg-brand-blue flex items-center justify-center text-brand-yellow">
+            <i class="fa-solid fa-taxi"></i>
+          </div>
+          <div>
+            <span class="font-bold text-brand-blue text-base font-heading">CATCHME CABS</span>
+            <span class="block text-[10px] text-slate-500 font-bold">& TOURS</span>
+          </div>
+        </div>
+        <button id="mobileMenuClose" class="w-8 h-8 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center hover:bg-slate-200">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <nav class="flex flex-col gap-4 mt-6 font-semibold text-slate-700">
+        <a href="index.html" class="flex items-center justify-between p-2 rounded-lg hover:bg-slate-50">
+          <span><i class="fa-solid fa-house w-6 text-slate-400"></i> Home</span>
+          <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+        </a>
+        <a href="about.html" class="flex items-center justify-between p-2 rounded-lg hover:bg-slate-50">
+          <span><i class="fa-solid fa-circle-info w-6 text-slate-400"></i> About Us</span>
+          <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+        </a>
+        <a href="services.html" class="flex items-center justify-between p-2 rounded-lg hover:bg-slate-50">
+          <span><i class="fa-solid fa-bell-concierge w-6 text-slate-400"></i> Services</span>
+          <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+        </a>
+        <a href="fleet.html" class="flex items-center justify-between p-2 rounded-lg hover:bg-slate-50">
+          <span><i class="fa-solid fa-car-side w-6 text-slate-400"></i> Our Fleet</span>
+          <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+        </a>
+        <a href="tours.html" class="flex items-center justify-between p-2 rounded-lg hover:bg-slate-50">
+          <span><i class="fa-solid fa-map-location-dot w-6 text-slate-400"></i> Sri Lanka Tours</span>
+          <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+        </a>
+        <a href="contact.html" class="flex items-center justify-between p-2 rounded-lg bg-brand-blue/5 text-brand-royal">
+          <span><i class="fa-solid fa-envelope w-6 text-brand-royal"></i> Contact & Book</span>
+          <i class="fa-solid fa-chevron-right text-xs"></i>
+        </a>
+      </nav>
+    </div>
+
+    <div class="p-6 bg-slate-50 border-t border-slate-100">
+      <div class="text-xs text-slate-500 font-semibold mb-2">24/7 RESERVATION HOTLINES:</div>
+      <a href="tel:+94768171844" class="block font-bold text-brand-blue text-sm mb-1">
+        <i class="fa-solid fa-phone text-brand-yellow mr-2"></i>+94 76 817 1844
+      </a>
+      <a href="tel:+94770379002" class="block font-bold text-brand-blue text-sm mb-4">
+        <i class="fa-solid fa-phone text-brand-yellow mr-2"></i>+94 77 037 9002
+      </a>
+      <a href="https://wa.me/94768171844?text=Hello%20Catchme%20Cabs,%20I%20want%20to%20inquire%20about%20a%20ride" target="_blank" class="w-full py-2.5 rounded-xl bg-brand-yellow text-brand-dark font-bold text-center block text-sm shadow">
+        <i class="fa-brands fa-whatsapp text-emerald-800 mr-1.5"></i> Chat on WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <!-- ================= PAGE BANNER ================= -->
+  <section class="relative bg-brand-dark text-white py-20 overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?q=80&w=1920&auto=format&fit=crop" 
+           alt="Sri Lanka Cab booking service" 
+           class="w-full h-full object-cover object-center opacity-20 filter blur-[1px]">
+      <div class="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-blue/90 to-brand-royal/80"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <span class="inline-block text-xs font-bold uppercase tracking-widest text-brand-yellow bg-white/10 px-4 py-1.5 rounded-full mb-3 backdrop-blur-md">
+        We Are At Your Service 24 Hours / 7 Days
+      </span>
+      <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight font-heading">
+        Contact & Book Your Ride
+      </h1>
+      <p class="text-slate-300 max-w-2xl mx-auto mt-4 text-sm sm:text-base leading-relaxed">
+        Get in touch with Catchme Cabs & Tours via direct call, WhatsApp, or our quick online reservation form. Rapid response guaranteed within minutes!
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= DIRECT CONTACT CHANNELS ================= -->
+  <section class="py-12 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Channel 1: Hotline 1 -->
+        <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm hover-lift flex items-start gap-4">
+          <div class="w-12 h-12 rounded-2xl bg-brand-royal text-white flex items-center justify-center text-xl flex-shrink-0">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+          <div>
+            <span class="text-xs font-bold uppercase text-slate-400 block">Primary Hotline & WhatsApp</span>
+            <a href="tel:+94768171844" class="text-lg font-extrabold text-brand-blue hover:text-brand-royal block mt-0.5">
+              +94 76 817 1844
+            </a>
+            <div class="mt-2 flex items-center gap-2">
+              <a href="tel:+94768171844" class="text-xs font-bold text-brand-royal hover:underline">
+                <i class="fa-solid fa-phone text-[10px]"></i> Call Direct
+              </a>
+              <span class="text-slate-300">•</span>
+              <a href="https://wa.me/94768171844?text=Hello%20Catchme%20Cabs,%20I%20would%20like%20to%20book%20a%20ride" target="_blank" class="text-xs font-bold text-emerald-600 hover:underline">
+                <i class="fa-brands fa-whatsapp text-[10px]"></i> WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Channel 2: Hotline 2 -->
+        <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm hover-lift flex items-start gap-4">
+          <div class="w-12 h-12 rounded-2xl bg-brand-yellow text-brand-dark flex items-center justify-center text-xl flex-shrink-0">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+          <div>
+            <span class="text-xs font-bold uppercase text-slate-400 block">Secondary Hotline & WhatsApp</span>
+            <a href="tel:+94770379002" class="text-lg font-extrabold text-slate-900 hover:text-amber-700 block mt-0.5">
+              +94 77 037 9002
+            </a>
+            <div class="mt-2 flex items-center gap-2">
+              <a href="tel:+94770379002" class="text-xs font-bold text-amber-700 hover:underline">
+                <i class="fa-solid fa-phone text-[10px]"></i> Call Direct
+              </a>
+              <span class="text-slate-300">•</span>
+              <a href="https://wa.me/94770379002?text=Hello%20Catchme%20Cabs,%20I%20would%20like%20to%20book%20a%20ride" target="_blank" class="text-xs font-bold text-emerald-600 hover:underline">
+                <i class="fa-brands fa-whatsapp text-[10px]"></i> WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Channel 3: Facebook -->
+        <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm hover-lift flex items-start gap-4">
+          <div class="w-12 h-12 rounded-2xl bg-blue-600 text-white flex items-center justify-center text-xl flex-shrink-0">
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+          <div>
+            <span class="text-xs font-bold uppercase text-slate-400 block">Facebook Official</span>
+            <a href="https://www.facebook.com/search/top?q=Catchme%20Cabs%20%26%20Tours" target="_blank" rel="noopener noreferrer" class="text-base font-extrabold text-blue-600 hover:underline block mt-0.5">
+              Catchme Cabs & Tours
+            </a>
+            <p class="text-xs text-slate-500 mt-1">Message us, view reviews, and photos from past tours.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= COMPREHENSIVE BOOKING FORM & MAP ================= -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <!-- Left: Booking Form -->
+        <div class="lg:col-span-7 bg-slate-50 p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-sm">
+          <div class="mb-6">
+            <span class="text-xs font-extrabold uppercase tracking-widest text-brand-gold bg-amber-50 px-3.5 py-1 rounded-full">
+              Direct Reservation
+            </span>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-2 font-heading">
+              Reserve Your Cab or Tour
+            </h2>
+            <p class="text-slate-600 text-xs sm:text-sm mt-1">
+              Complete the fields below to send an immediate formatted dispatch inquiry directly to our WhatsApp operators.
+            </p>
+          </div>
+
+          <form id="contactBookingForm" onsubmit="handleContactPageBooking(event)" class="space-y-4">
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1.5">Full Name: *</label>
+                <input type="text" id="cpName" placeholder="e.g. Michael Perera" required class="w-full bg-white border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-brand-royal">
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1.5">WhatsApp / Phone Number: *</label>
+                <input type="tel" id="cpPhone" placeholder="e.g. +94 7X XXX XXXX or +44 ..." required class="w-full bg-white border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-brand-royal">
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1.5">Service Type: *</label>
+                <select id="cpService" class="w-full bg-white border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-brand-royal">
+                  <option value="BIA Airport Pickup">BIA Airport Pickup (Flight Arrival)</option>
+                  <option value="BIA Airport Dropoff">BIA Airport Dropoff (Departure)</option>
+                  <option value="Day Tour Excursion">1-Day Sightseeing Excursion</option>
+                  <option value="Multi-Day Round Island Tour">Multi-Day Sri Lanka Round Tour</option>
+                  <option value="Point-to-Point City Cab">Point-to-Point Long Distance Cab</option>
+                  <option value="Wedding / VIP Fleet Hire">Wedding Car / VIP Event Hire</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1.5">Vehicle Preference: *</label>
+                <select id="cpVehicle" class="w-full bg-white border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-brand-royal">
+                  <option value="Standard Sedan (Toyota Premio / Axio / Prius)">Standard Sedan (1-3 Pax)</option>
+                  <option value="Toyota KDH Flat Roof Van (4-8 Pax)">Toyota KDH Flat Roof Van (4-8 Pax)</option>
+                  <option value="Toyota KDH High Roof Grand Cabin (8-14 Pax)">Toyota KDH High Roof Grand Cabin (8-14 Pax)</option>
+                  <option value="Luxury SUV (Prado / Montero)">Luxury SUV (1-4 Pax)</option>
+                  <option value="Toyota Coaster Mini Coach (15-28 Pax)">Toyota Coaster Mini Coach (15-28 Pax)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1.5">Pickup Location: *</label>
+                <input type="text" id="cpPickup" placeholder="e.g. Katunayake BIA Airport or Hotel" required class="w-full bg-white border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-brand-royal">
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1.5">Destination / Tour Route: *</label>
+                <input type="text" id="cpDrop" placeholder="e.g. Kandy / Galle Fort / Ella" required class="w-full bg-white border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-brand-royal">
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1.5">Date: *</label>
+                <input type="date" id="cpDate" required class="w-full bg-white border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-brand-royal">
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1.5">Pickup Time:</label>
+                <input type="time" id="cpTime" value="10:00" class="w-full bg-white border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-brand-royal">
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1.5">Passengers:</label>
+                <select id="cpPax" class="w-full bg-white border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-brand-royal">
+                  <option value="1">1 Person</option>
+                  <option value="2" selected>2 Persons</option>
+                  <option value="3-4">3 - 4 Persons</option>
+                  <option value="5-8">5 - 8 Persons</option>
+                  <option value="9-14">9 - 14 Persons</option>
+                  <option value="15+">15+ Group</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1.5">Flight Number (if airport pickup) & Extra Notes:</label>
+              <textarea id="cpNotes" rows="3" placeholder="e.g. Landing on Qatar Airways QR 668 at 3:45 PM. 3 large bags. Need child car seat." class="w-full bg-white border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-brand-royal"></textarea>
+            </div>
+
+            <!-- Choose WhatsApp Dispatch Number -->
+            <div class="p-4 rounded-2xl bg-white border border-slate-200">
+              <span class="block text-xs font-bold text-slate-700 mb-2">Send WhatsApp Booking to:</span>
+              <div class="grid grid-cols-2 gap-3 text-xs">
+                <label class="flex items-center gap-2.5 p-3 rounded-xl border-2 border-brand-royal/30 bg-blue-50/40 cursor-pointer">
+                  <input type="radio" name="targetHotline" value="94768171844" checked class="text-brand-royal">
+                  <div>
+                    <span class="font-extrabold text-brand-blue block">+94 76 817 1844</span>
+                    <span class="text-[10px] text-slate-500">Hotline 1</span>
+                  </div>
+                </label>
+                <label class="flex items-center gap-2.5 p-3 rounded-xl border-2 border-brand-yellow/40 bg-amber-50/40 cursor-pointer">
+                  <input type="radio" name="targetHotline" value="94770379002" class="text-brand-royal">
+                  <div>
+                    <span class="font-extrabold text-slate-900 block">+94 77 037 9002</span>
+                    <span class="text-[10px] text-slate-500">Hotline 2</span>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <button type="submit" class="w-full py-4 rounded-xl bg-brand-yellow hover:bg-brand-gold text-brand-dark font-extrabold text-base shadow-lg flex items-center justify-center gap-2.5 transition-all">
+              <i class="fa-brands fa-whatsapp text-2xl text-emerald-900"></i>
+              <span>Send Booking Order to WhatsApp</span>
+            </button>
+
+          </form>
+
+        </div>
+
+        <!-- Right: Islandwide Hubs & Map & Info -->
+        <div class="lg:col-span-5 space-y-6">
+          
+          <div class="bg-brand-blue text-white p-8 rounded-3xl shadow-xl space-y-5">
+            <span class="text-xs font-extrabold uppercase tracking-widest text-brand-yellow">
+              Island-Wide Presence
+            </span>
+            <h3 class="text-2xl font-bold font-heading">
+              Always Nearby Wherever You Land
+            </h3>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              With vehicles and drivers based across Katunayake (BIA Airport), Negombo, Colombo, Kandy, Galle, and southern coastal resorts, we dispatch vehicles with minimal wait times.
+            </p>
+            
+            <div class="space-y-3 pt-2 text-xs">
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-location-dot text-brand-yellow text-base w-4"></i>
+                <span><strong>BIA Airport Desk:</strong> Katunayake International Arrivals</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-location-dot text-brand-yellow text-base w-4"></i>
+                <span><strong>Main Operational Hub:</strong> Colombo & Western Province</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-location-dot text-brand-yellow text-base w-4"></i>
+                <span><strong>Southern Base:</strong> Galle Fort & Bentota</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-location-dot text-brand-yellow text-base w-4"></i>
+                <span><strong>Central Highlands:</strong> Kandy & Nuwara Eliya</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Embedded Map Visual Placeholder -->
+          <div class="rounded-3xl overflow-hidden border border-slate-200 shadow-sm h-72 relative bg-slate-100">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126628.26189914488!2d79.80587278278292!3d7.180258079545464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2ee9c6bb2f73b%3A0xa51626e0b593f994!2sBandaranaike%20International%20Airport!5e0!3m2!1sen!2slk!4v1700000000000!5m2!1sen!2slk" 
+              width="100%" 
+              height="100%" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Catchme Cabs Sri Lanka BIA Airport Hub">
+            </iframe>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Script for Contact Page Booking -->
+  <script>
+    function handleContactPageBooking(e) {
+      e.preventDefault();
+      const name = document.getElementById('cpName').value;
+      const phone = document.getElementById('cpPhone').value;
+      const service = document.getElementById('cpService').value;
+      const vehicle = document.getElementById('cpVehicle').value;
+      const pickup = document.getElementById('cpPickup').value;
+      const drop = document.getElementById('cpDrop').value;
+      const date = document.getElementById('cpDate').value;
+      const time = document.getElementById('cpTime').value;
+      const pax = document.getElementById('cpPax').value;
+      const notes = document.getElementById('cpNotes').value || 'None';
+      const targetHotline = document.querySelector('input[name="targetHotline"]:checked')?.value || '94768171844';
+
+      const msg = `*Catchme Cabs & Tours - Booking Request*%0A` +
+        `-----------------------------------------%0A` +
+        `👤 *Name:* ${encodeURIComponent(name)}%0A` +
+        `📞 *Contact Number:* ${encodeURIComponent(phone)}%0A` +
+        `🏷️ *Service:* ${encodeURIComponent(service)}%0A` +
+        `🚗 *Vehicle:* ${encodeURIComponent(vehicle)}%0A` +
+        `🛫 *Pickup Location:* ${encodeURIComponent(pickup)}%0A` +
+        `📍 *Destination:* ${encodeURIComponent(drop)}%0A` +
+        `📅 *Date:* ${encodeURIComponent(date)}%0A` +
+        `⏰ *Time:* ${encodeURIComponent(time)}%0A` +
+        `👥 *Passengers:* ${encodeURIComponent(pax)}%0A` +
+        `📝 *Special Notes / Flight:* ${encodeURIComponent(notes)}%0A` +
+        `-----------------------------------------%0A` +
+        `Please confirm availability, vehicle choice, and exact price quote. Thank you!`;
+
+      window.open(`https://wa.me/${targetHotline}?text=${msg}`, '_blank');
+    }
+  </script>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-brand-dark text-slate-300 pt-16 pb-12 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">
+        
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-royal to-blue-500 flex items-center justify-center text-brand-yellow shadow-lg">
+              <i class="fa-solid fa-taxi"></i>
+            </div>
+            <div>
+              <span class="text-xl font-black text-white block tracking-tight font-heading">
+                CATCHME <span class="text-brand-yellow">CABS</span>
+              </span>
+              <span class="text-[10px] tracking-widest text-slate-400 font-bold block">
+                & TOURS SRI LANKA
+              </span>
+            </div>
+          </div>
+          <p class="text-slate-400 text-sm leading-relaxed max-w-sm">
+            Sri Lanka's trusted 24/7 cab service and tour operator. Providing executive airport pickups, family KDH vans, luxury sedans, and custom round-island tour adventures at honest, fixed prices.
+          </p>
+          <div class="flex items-center gap-3 pt-2">
+            <a href="https://www.facebook.com/search/top?q=Catchme%20Cabs%20%26%20Tours" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-white/5 hover:bg-blue-600 text-white flex items-center justify-center text-lg transition-colors" title="Facebook - Catchme Cabs & Tours">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://wa.me/94768171844" target="_blank" class="w-10 h-10 rounded-xl bg-white/5 hover:bg-emerald-600 text-white flex items-center justify-center text-lg transition-colors" title="WhatsApp 1">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://wa.me/94770379002" target="_blank" class="w-10 h-10 rounded-xl bg-white/5 hover:bg-emerald-600 text-white flex items-center justify-center text-lg transition-colors" title="WhatsApp 2">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-sm tracking-wider uppercase mb-4">Quick Links</h4>
+          <ul class="space-y-2.5 text-sm">
+            <li><a href="index.html" class="hover:text-brand-yellow transition-colors">Home Page</a></li>
+            <li><a href="about.html" class="hover:text-brand-yellow transition-colors">About Our Company</a></li>
+            <li><a href="services.html" class="hover:text-brand-yellow transition-colors">Transport Services</a></li>
+            <li><a href="fleet.html" class="hover:text-brand-yellow transition-colors">Vehicle Fleet</a></li>
+            <li><a href="tours.html" class="hover:text-brand-yellow transition-colors">Sri Lanka Tours</a></li>
+            <li><a href="contact.html" class="hover:text-brand-yellow transition-colors">Contact & Booking</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-sm tracking-wider uppercase mb-4">Top Services</h4>
+          <ul class="space-y-2.5 text-sm">
+            <li><a href="services.html" class="hover:text-brand-yellow transition-colors">BIA Airport Pickup</a></li>
+            <li><a href="services.html" class="hover:text-brand-yellow transition-colors">BIA Airport Dropoff</a></li>
+            <li><a href="fleet.html" class="hover:text-brand-yellow transition-colors">Toyota KDH Luxury Van</a></li>
+            <li><a href="tours.html" class="hover:text-brand-yellow transition-colors">Kandy & Hill Country Tour</a></li>
+            <li><a href="tours.html" class="hover:text-brand-yellow transition-colors">Galle Day Excursion</a></li>
+            <li><a href="services.html" class="hover:text-brand-yellow transition-colors">Corporate Chauffeurs</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-sm tracking-wider uppercase mb-4">24/7 Hotlines</h4>
+          <ul class="space-y-3 text-sm">
+            <li>
+              <span class="block text-xs text-slate-400">Primary Reservation:</span>
+              <a href="tel:+94768171844" class="font-bold text-white hover:text-brand-yellow flex items-center gap-2 mt-0.5">
+                <i class="fa-solid fa-phone text-brand-yellow text-xs"></i> +94 76 817 1844
+              </a>
+            </li>
+            <li>
+              <span class="block text-xs text-slate-400">Secondary Hotline:</span>
+              <a href="tel:+94770379002" class="font-bold text-white hover:text-brand-yellow flex items-center gap-2 mt-0.5">
+                <i class="fa-solid fa-phone text-brand-yellow text-xs"></i> +94 77 037 9002
+              </a>
+            </li>
+            <li>
+              <span class="block text-xs text-slate-400">Facebook Page:</span>
+              <a href="https://www.facebook.com/search/top?q=Catchme%20Cabs%20%26%20Tours" target="_blank" class="text-blue-400 hover:text-white flex items-center gap-2 mt-0.5 text-xs">
+                <i class="fa-brands fa-facebook"></i> Catchme Cabs & Tours
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <p>© 2026 Catchme Cabs & Tours. All Rights Reserved. Sri Lanka.</p>
+        <p>Safe • Punctual • Reliable</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ================= FLOATING SPEED DIAL ================= -->
+  <div class="floating-dial">
+    <div class="float-btn-wrap">
+      <span class="float-tooltip">Call Hotlines</span>
+      <button class="trigger-call-modal float-btn float-btn-call-yellow" aria-label="Call Hotlines">
+        <i class="fa-solid fa-phone-volume text-xl"></i>
+      </button>
+    </div>
+    <div class="float-btn-wrap">
+      <span class="float-tooltip">Chat on WhatsApp</span>
+      <a href="https://wa.me/94768171844?text=Hello%20Catchme%20Cabs,%20I%20would%20like%20to%20inquire%20about%20a%20ride!" target="_blank" rel="noopener noreferrer" class="float-btn float-btn-whatsapp" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp text-2xl"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- ================= CALL CHOOSER MODAL ================= -->
+  <div id="callChooserModal" class="modal-overlay fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 modal-hidden">
+    <div class="modal-content bg-white rounded-3xl max-w-md w-full p-6 shadow-2xl relative border border-slate-100">
+      <button class="close-call-modal absolute top-4 right-4 w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-500 flex items-center justify-center">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="text-center mb-6">
+        <div class="w-14 h-14 rounded-2xl bg-brand-yellow/20 text-brand-dark flex items-center justify-center text-2xl mx-auto mb-3">
+          <i class="fa-solid fa-headset text-brand-gold"></i>
+        </div>
+        <h3 class="text-xl font-extrabold text-slate-900 font-heading">24/7 Dispatch Hotlines</h3>
+        <p class="text-slate-500 text-xs mt-1">Select a number below to connect immediately with our booking team:</p>
+      </div>
+
+      <div class="space-y-3">
+        <a href="tel:+94768171844" class="flex items-center justify-between p-4 rounded-2xl border-2 border-brand-royal/20 hover:border-brand-royal bg-blue-50/50 hover:bg-blue-50 transition-all group">
+          <div class="flex items-center gap-3.5">
+            <div class="w-10 h-10 rounded-xl bg-brand-royal text-white flex items-center justify-center text-base">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="text-left">
+              <span class="text-xs text-slate-500 font-semibold block">Hotline 1 (Primary)</span>
+              <span class="text-base font-extrabold text-brand-blue group-hover:text-brand-royal">+94 76 817 1844</span>
+            </div>
+          </div>
+          <i class="fa-solid fa-arrow-right text-slate-400 group-hover:text-brand-royal"></i>
+        </a>
+
+        <a href="tel:+94770379002" class="flex items-center justify-between p-4 rounded-2xl border-2 border-brand-yellow/30 hover:border-brand-gold bg-amber-50/40 hover:bg-amber-50 transition-all group">
+          <div class="flex items-center gap-3.5">
+            <div class="w-10 h-10 rounded-xl bg-brand-yellow text-brand-dark flex items-center justify-center text-base">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="text-left">
+              <span class="text-xs text-slate-500 font-semibold block">Hotline 2 (Secondary)</span>
+              <span class="text-base font-extrabold text-slate-900 group-hover:text-amber-700">+94 77 037 9002</span>
+            </div>
+          </div>
+          <i class="fa-solid fa-arrow-right text-slate-400 group-hover:text-amber-700"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
